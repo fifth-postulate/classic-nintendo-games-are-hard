@@ -1,0 +1,11 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Classic Nintendo Games are Hard",
+    "packageVersion": "1.0.0",
+    "revealTheme": "solarized",
+    "useSass": false,
+    "deployToGithubPages": true,
+    "githubUsername": "fifth-postulate",
+    "githubRepository": "classic-nintendo-games-are-hard"
+  }
+}
