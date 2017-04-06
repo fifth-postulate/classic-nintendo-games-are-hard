@@ -1,6 +1,11 @@
 [
     "title.md",
-    "turing-machine.html",
+    {
+        "filename": "turing-machine.html",
+        "attr": {
+            "data-state": "turing-machine"
+        }
+    },
     "p.html",
     "np.html"
 ]
