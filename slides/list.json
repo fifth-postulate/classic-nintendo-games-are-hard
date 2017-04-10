@@ -7,5 +7,7 @@
         }
     },
     "p.html",
-    "np.html"
+    "np.html",
+    "np-hard.html",
+    "np-complete.html"
 ]
