@@ -10,5 +10,6 @@
     "np.html",
     "np-hard.html",
     "np-complete.html",
-    "sat-is-np-complete.md"
+    "sat-is-np-complete.md",
+    "boolean-formula.md"
 ]
