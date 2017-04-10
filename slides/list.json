@@ -9,5 +9,6 @@
     "p.html",
     "np.html",
     "np-hard.html",
-    "np-complete.html"
+    "np-complete.html",
+    "sat-is-np-complete.md"
 ]
