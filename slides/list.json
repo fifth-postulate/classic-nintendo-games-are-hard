@@ -13,5 +13,6 @@
     "sat-is-np-complete.md",
     "boolean-formula.md",
     "3-sat-is-np-complete.md",
-    "3-sat-formula.md"
+    "3-sat-formula.md",
+    "gadgets.md"
 ]
