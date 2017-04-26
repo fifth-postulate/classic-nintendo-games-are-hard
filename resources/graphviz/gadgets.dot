@@ -1,0 +1,86 @@
+strict digraph {
+  node [ shape = rectangle ]
+  edge [ arrowhead = none ]
+
+  start [ label = "Start" ]
+  v1 [ label = "Variable" ]
+  v2 [ label = "Variable" ]
+  v3 [ label = "Variable" ]
+  v1T [ label = "" shape = point ]
+  v1F [ label = "" shape = point ]
+  v2T [ label = "" shape = point ]
+  v2F [ label = "" shape = point ]
+  v3T [ label = "" shape = point ]
+  v3F [ label = "" shape = point ]
+  clause1 [ label = "Clause" ]
+  clause2 [ label = "Clause" ]
+  clause3 [ label = "Clause" ]
+  clause4 [ label = "Clause" ]
+  finish [ label = "Finish" ]
+
+  start -> v1
+
+  v1 -> v1T
+  v1 -> v1F
+  v2 -> v2T
+  v2 -> v2F
+  v3 -> v3T
+  v3 -> v3F
+
+  v1T -> clause1 [color = green]
+  v1T -> clause2 [color = green]
+  v1F -> clause3 [color = red]
+  v1F -> clause4 [color = red]
+  v1T -> v2 [color = blue]
+  v1F -> v2 [color = blue]
+
+  v2T -> clause2 [color = green]
+  v2F -> clause1 [color = red]
+  v2F -> clause3 [color = red]
+  v2F -> clause4 [color = red]
+  v2T -> v3 [color = blue]
+  v2F -> v3 [color = blue]
+
+  v3T -> clause1 [color = green]
+  v3F -> clause3 [color = red]
+  v3F -> clause4 [color = red]
+  v3T -> clause1 [color = blue]
+  v3F -> clause1 [color = blue]
+
+  clause1 -> clause2
+  clause2 -> clause3
+  clause3 -> clause4
+
+  clause4 -> finish
+
+
+  {
+    rank = same;
+    rankdir = LR;
+    start;
+    v1;
+    v2;
+    v3
+  }
+  {
+    rank = same;
+    v1T;
+    v1F;
+    v2T;
+    v2F;
+    v3T;
+    v3F;
+  }
+  {
+    rank = same;
+    clause1;
+    clause2;
+    clause3;
+    clause4;
+    finish
+  }
+
+  edge [style = invisible]
+  start -> v1 -> v2 -> v3
+  v1T -> v1F -> v2T -> v2F -> v3T -> v3F
+}
